@@ -1,7 +1,6 @@
 {
-  "private": true,
   "version": "1.0.0",
-  "description": "Deck created with mdx-deck",
+  "description": "An introduction to TDD in JavaScript with Jest",
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
@@ -9,8 +8,9 @@
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
   },
+  "repository": "git@github.com:ericadamski/tdd-with-jest.git",
   "keywords": [],
-  "author": "Brent Jackson",
+  "author": "Eric Adamski <er.adamski@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"
