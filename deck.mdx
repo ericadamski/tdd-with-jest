@@ -27,7 +27,7 @@ export { default as theme } from "./theme";
 # How you might write code now
 
 ```notes
-demo
+sample 1
 ```
 
 ---
@@ -35,7 +35,7 @@ demo
 # What potential problems does this introduce?
 
 ```notes
-demo of fn with bugs
+sample 2
 ```
 
 ---
@@ -76,6 +76,7 @@ Testing a single "**unit**" of a program, with as little dependencies involved a
 
 <img
   style={{ position: "absolute", transform: "translateX(-50%)" }}
+  srcset="https://user-images.githubusercontent.com/6516758/48911631-39836f00-ee41-11e8-8dcd-165dfa06433b.png"
   src="/assets/jestjs.io.png"
 />
 
@@ -84,3 +85,160 @@ Testing a single "**unit**" of a program, with as little dependencies involved a
 # `yarn add --dev jest`
 
 #### `npm i -D jest`
+
+---
+
+# Writing Test Suites
+
+---
+
+<img srcset="https://user-images.githubusercontent.com/6516758/48911629-39836f00-ee41-11e8-941e-7767239a5a10.png" src="/assets/describe.png" />
+
+---
+
+# Writing Tests
+
+---
+
+```notes
+describe('Add', () => {
+  it('should be able to add two numbers', () => {
+    /**
+     * Write assertions in here
+     */
+  });
+});
+```
+
+<img srcset="https://user-images.githubusercontent.com/6516758/48911630-39836f00-ee41-11e8-80a9-4aa46da1f180.png" src="/assets/it.png" />
+
+---
+
+# Actually Testing
+
+---
+
+# Layout of a test
+
+---
+
+# Arrange 🤔
+
+Layout and setup all variables and mocks required to run the test.
+
+<img srcset="https://user-images.githubusercontent.com/6516758/48911627-38ead880-ee41-11e8-9434-6f925cf6b59a.png" src="/assets/arrange.png" />
+
+```notes
+describe('Add', () => {
+  it('should be able to add two numbers', () => {
+    // Arrange
+    const firstNumber = 1;
+    const secondNumber = 2;
+  });
+});
+```
+
+
+
+---
+
+# Act 🤺
+
+Run the unit you are trying to test
+
+<img srcset="https://user-images.githubusercontent.com/6516758/48911625-38ead880-ee41-11e8-8d5e-bd9d1d422642.png" src="/assets/act.png" />
+
+```notes
+describe('Add', () => {
+  it('should be able to add two numbers', () => {
+    // Arrange
+    const firstNumber = 1;
+    const secondNumber = 2;
+
+    // Act
+    const result = add(firstNumber, secondNumber);
+  });
+});
+```
+
+
+
+---
+
+# Assert 🕵️‍♂️
+
+Make sure that you get the result you were looking for! Jest and other test runners have built in assertions.
+
+<img width="50%" srcset="https://user-images.githubusercontent.com/6516758/48911628-39836f00-ee41-11e8-9081-50c07c2f0003.png" src="/assets/assert.png" />
+
+```notes
+describe('Add', () => {
+  it('should be able to add two numbers', () => {
+    // Arrange
+    const firstNumber = 1;
+    const secondNumber = 2;
+
+    // Act
+    const result = add(firstNumber, secondNumber);
+
+    // Assert
+    expect(result).toBe(3);
+  });
+});
+```
+
+
+
+---
+
+# Running the tests 🏃‍♀️
+
+Add a script to `package.json` like so
+
+<img srcset="https://user-images.githubusercontent.com/6516758/48911632-39836f00-ee41-11e8-8984-9827cd75ec19.png" src="/assets/package.png" />
+
+---
+
+# Running the tests 🏃‍♀️
+
+<img
+  srcset="https://user-images.githubusercontent.com/6516758/48911634-39836f00-ee41-11e8-88cc-c18911d4d2aa.gif"
+  src="/assets/running.gif"
+/>
+
+---
+
+# Testing, not TDD
+
+```notes
+sample 3
+
+write the code then test
+```
+
+---
+
+# TDD?
+
+```notes
+sample 4
+```
+
+---
+
+# A more advanced example
+
+```notes
+sample 5
+```
+
+---
+
+# Thank you!
+
+<br />
+<br />
+
+| Twitter   | Github       |
+| --------- | ------------ |
+| @zealigan | @ericadamski |

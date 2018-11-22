@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add should throw an error when attempting to add non-numbers 1`] = `"This isn't a number!"`;
+
+exports[`Add should throw an error when attempting to add non-numbers 2`] = `"This isn't a number!"`;
+
+exports[`Add should throw an error when attempting to add non-numbers 3`] = `"This isn't a number!"`;
+
+exports[`Add should throw an error when attempting to add non-numbers 4`] = `"This isn't a number!"`;
+
+exports[`Add should throw an error when attempting to add non-numbers 5`] = `"This isn't a number!"`;
+
+exports[`Add should throw an error when attempting to add non-numbers 6`] = `"This isn't a number!"`;
+
+exports[`Add should throw an error when attempting to add non-numbers 7`] = `"This isn't a number!"`;
